@@ -49,15 +49,15 @@ td {
   left: 0px;
 }
 
-.head {
+#head {
   z-index: 2
 }
 
-.body {
+#body {
   z-index: 0
 }
 
-.shoes {
+#shoes {
   z-index: 1
 }
 
