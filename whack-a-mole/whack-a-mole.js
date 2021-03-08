@@ -62,7 +62,6 @@ function hideMole(cell) {
   snd.play();
 
   numOfMoles--;
-  console.log("New num of moles: " + numOfMoles);
   if (numOfMoles == 0) {
     newStage();
   }
@@ -87,7 +86,6 @@ function newMole() {
   var randomCell = randomRow[getRandomInt(0, randomRow.length)];
 
   if (randomCell.childNodes.length != 0) {
-    console.log("Failed to place mole, trying again...");
     newMole();
   }
   else {
@@ -100,7 +98,6 @@ function newBomb() {
   var randomCell = randomRow[getRandomInt(0, randomRow.length)];
 
   if (randomCell.childNodes.length != 0) {
-    console.log("Failed to place mole, trying again...");
     newBomb();
   }
   else {
@@ -109,8 +106,6 @@ function newBomb() {
 }
 
 function newStage() {
-
-  console.log("adding new stage")
 
   numOfMoles = getRandomInt(1, 4);
   for (i = 0; i < numOfMoles; i++) {
